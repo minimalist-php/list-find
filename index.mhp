@@ -1,0 +1,24 @@
+return function (parameters)
+    list : parameters[`list`]
+    iteration : parameters[`iteration`]
+    entry : 0
+    element : null
+
+    find_in_list : function (list) use (reference_to iteration, reference_to entry, reference_to element)
+        found : iteration([
+            element : list[entry]
+            entry : entry
+        ])
+
+        if found
+            element : list[entry]
+            entry : list_length(list)
+
+            return true
+
+        if entry < list_length(list)
+            entry : entry + 1
+
+    for(; entry < list_length(list); find_in_list(list))
+
+    return element

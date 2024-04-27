@@ -1,0 +1,4 @@
+return [
+    repository : `https://github.com/minimalist-php/list-find`,
+    version : `2024.05.1`
+]
